@@ -4,8 +4,12 @@
   "description": "A github action to enable deployments to AWS ElasticBeanstalk",
   "main": "index.js",
   "repository": "https://github.com/karanjaE/elasticbeanstalk-deploy",
-  "author": "karanjaE <rranchow@gmail.com>",
+  "author": "Eddy Karanja",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karanjaE/elasticbeanstalk-deploy/issues"
+  },
+  "homepage": "https://github.com/karanjaE/elasticbeanstalk-deplo#readme",
   "scripts": {
     "build": "ncc build src/main.ts -o dist",
     "test": "jest",
