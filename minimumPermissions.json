@@ -1,0 +1,27 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ElasticBeanstalkPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "elasticbeanstalk:CreateApplicationVersion",
+        "elasticbeanstalk:UpdateEnvironment"
+      ],
+      "Resource": [
+        "arn:aws:elasticbeanstalk:*:*:application/*",
+        "arn:aws:elasticbeanstalk:*:*:environment/*"
+      ]
+    },
+    {
+      "Sid": "S3Permissions",
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:DeleteObject"
+      ],
+      "Resource": "arn:aws:s3:::elasticbeanstalk-*/*"
+    }
+  ]
+}

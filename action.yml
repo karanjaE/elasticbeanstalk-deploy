@@ -1,0 +1,30 @@
+name: 'Deploy to AWS Elastic Beanstalk'
+description: 'Deploy an application to AES Elastic Beanstalk through Github Actions'
+inputs:
+  aws-access-key-id:
+    description: 'AWS Access Key ID'
+    required: true
+  aws-secret-access-key:
+    description: 'AWS Secret Access Key'
+    required: true
+  aws-region:
+    description: 'AWS Region'
+    required: true
+  application-name:
+    description: 'Elastic Beanstalk Application Name'
+    required: true
+  bucket-name:
+    description: 'S3 Bucket Name'
+    required: false
+  environment-name:
+    description: 'Elastic Beanstalk Environment Name'
+    required: true
+  version-label:
+    description: 'A version label for the new app version'
+    required: true
+  deployment-package:
+    description: 'Path to the deployment package (.zip file)'
+    required: true
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
