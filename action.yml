@@ -13,6 +13,9 @@ inputs:
   application-name:
     description: 'Elastic Beanstalk Application Name'
     required: true
+  bucket-name:
+    description: 'S3 Bucket Name'
+    required: false
   environment-name:
     description: 'Elastic Beanstalk Environment Name'
     required: true
@@ -23,5 +26,5 @@ inputs:
     description: 'Path to the deployment package (.zip file)'
     required: true
 runs:
-  using: 'node18'
+  using: 'node20'
   main: 'dist/index.js'
