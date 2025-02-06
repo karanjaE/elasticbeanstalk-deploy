@@ -1,0 +1,9 @@
+{
+  "name": "elasticbeanstalk-deploy",
+  "version": "0.0.1",
+  "description": "A github action to enable deployments to AWS ElasticBeanstalk",
+  "main": "index.js",
+  "repository": "https://github.com/karanjaE/elasticbeanstalk-deploy",
+  "author": "karanjaE <rranchow@gmail.com>",
+  "license": "MIT"
+}
