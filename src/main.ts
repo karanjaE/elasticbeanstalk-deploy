@@ -43,6 +43,7 @@ async function run(): Promise<void> {
       Bucket: s3Bucket,
       Key: s3Key,
       Body: createReadStream(deplymentPackage), //TODO: Check if this override still works for the action
+      ContentType: "application/zip",
     }
     const command = new PutObjectAclCommand(putObjectParams);
     await s3Client.send(command);
